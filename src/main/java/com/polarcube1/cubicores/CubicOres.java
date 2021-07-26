@@ -2,7 +2,6 @@ package com.polarcube1.cubicores;
 
 import com.polarcube1.cubicores.block.ModBlocks;
 import com.polarcube1.cubicores.item.ModItems;
-import com.polarcube1.cubicores.util.RegistryHandler;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.client.event.ColorHandlerEvent;
@@ -33,8 +32,6 @@ public class CubicOres
         eventBus.addListener(this::setup);
         // Register the doClientStuff method for modloading
         eventBus.addListener(this::doClientStuff);
-
-        RegistryHandler.init();
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
