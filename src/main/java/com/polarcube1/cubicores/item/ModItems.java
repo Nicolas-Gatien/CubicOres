@@ -14,7 +14,9 @@ public class ModItems {
 
 
     public static final RegistryObject<Item> RUBY = ITEMS.register("ruby",
-            () -> new Item(new Item.Properties().tab(CubicOres.TAB)));
+            () -> new Item(new Item.Properties().tab(ModItemGroup.CUBIC_ORES)));
+    public static final RegistryObject<Item> HEARTHERITE = ITEMS.register("heartherite",
+            () -> new Item(new Item.Properties().tab(ModItemGroup.CUBIC_ORES)));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

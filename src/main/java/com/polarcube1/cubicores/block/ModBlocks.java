@@ -1,9 +1,11 @@
 package com.polarcube1.cubicores.block;
 
 import com.polarcube1.cubicores.CubicOres;
+import com.polarcube1.cubicores.item.ModItemGroup;
 import com.polarcube1.cubicores.item.ModItems;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -22,7 +24,10 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> RUBY_BLOCK = registerBlock("ruby_block",
             () -> new Block(AbstractBlock.Properties.of(Material.METAL)
-                    .harvestLevel(1).harvestTool(ToolType.PICKAXE).strength(5f)));
+                    .harvestLevel(1)
+                    .harvestTool(ToolType.PICKAXE)
+                    .strength(1f)
+                    .sound(SoundType.METAL)));
 
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block){
@@ -33,7 +38,7 @@ public class ModBlocks {
 
     private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block){
           ModItems.ITEMS.register(name, () -> new BlockItem(block.get(),
-                  new Item.Properties().tab(CubicOres.TAB)));
+                  new Item.Properties().tab(ModItemGroup.CUBIC_ORES)));
     }
 
     public static void register(IEventBus eventBus){

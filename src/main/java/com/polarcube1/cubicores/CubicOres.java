@@ -45,11 +45,4 @@ public class CubicOres
     private void doClientStuff(final FMLClientSetupEvent event) {
         // do something that can only be done on the client
     }
-
-    public static final ItemGroup TAB = new ItemGroup("cubicoresTab") {
-        @Override
-        public ItemStack makeIcon() {
-            return new ItemStack(ModItems.RUBY.get());
-        }
-    };
 }

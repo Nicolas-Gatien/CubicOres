@@ -1,5 +1,6 @@
 {
   "item.cubicores.ruby": "Ruby",
+  "item.cubicores.heartherite": "Heartherite",
   "block.cubicores.ruby_block": "Block of Ruby",
-  "itemGroup.cubicoresTab": "Cubic Ores"
+  "itemGroup.cubicOresTab": "Cubic Ores"
 }
