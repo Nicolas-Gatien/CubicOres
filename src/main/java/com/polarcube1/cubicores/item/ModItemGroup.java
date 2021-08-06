@@ -8,7 +8,7 @@ public class ModItemGroup {
     public static final ItemGroup CUBIC_ORES = new ItemGroup("cubicOresTab") {
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(ModItems.RUBY.get());
+            return new ItemStack(ModItems.BROOSK.get());
         }
     };
 }

@@ -1,6 +1,10 @@
 {
-  "item.cubicores.ruby": "Ruby",
-  "item.cubicores.heartherite": "Heartherite",
+  "item.cubicores.broosk": "Broosk",
+  "item.cubicores.broosk_pickaxe": "Broosk Pickaxe",
+  "item.cubicores.broosk_axe": "Broosk Axe",
+  "item.cubicores.broosk_hoe": "Broosk Hoe",
+  "item.cubicores.broosk_sword": "Broosk Sword",
+  "item.cubicores.broosk_shovel": "Broosk Shovel",
   "block.cubicores.ruby_block": "Block of Ruby",
   "itemGroup.cubicOresTab": "Cubic Ores"
 }
