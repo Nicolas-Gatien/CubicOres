@@ -50,6 +50,10 @@ public class ModItems {
     public static final RegistryObject<Item> BROOSK_HELMET = ITEMS.register("broosk_helmet",
             () -> new ArmorItem(ModArmorMaterial.BROOSK, EquipmentSlotType.HEAD, new Item.Properties().tab(ModItemGroup.CUBIC_ORES)));
 
+    // Gusper
+    public static final RegistryObject<Item> GUSPER_SHARDS = ITEMS.register("gusper_shards",
+            () -> new Item(new Item.Properties().tab(ModItemGroup.CUBIC_ORES)));
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }
