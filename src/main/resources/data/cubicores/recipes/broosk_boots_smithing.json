@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:golden_boots"
+  },
+  "addition": {
+    "item": "cubicores:broosk"
+  },
+  "result": {
+    "item": "cubicores:broosk_boots"
+  }
+}

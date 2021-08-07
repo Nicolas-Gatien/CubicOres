@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:golden_leggings"
+  },
+  "addition": {
+    "item": "cubicores:broosk"
+  },
+  "result": {
+    "item": "cubicores:broosk_leggings"
+  }
+}
