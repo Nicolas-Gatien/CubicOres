@@ -28,6 +28,12 @@ public class ModBlocks {
                     .harvestTool(ToolType.PICKAXE)
                     .strength(1f)
                     .sound(SoundType.METAL)));
+    public static final RegistryObject<Block> GUSPER_ORE = registerBlock("gusper_ore",
+            () -> new Block(AbstractBlock.Properties.of(Material.STONE)
+                    .harvestLevel(2)
+                    .harvestTool(ToolType.PICKAXE)
+                    .strength(50f)
+                    .sound(SoundType.STONE)));
 
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block){
