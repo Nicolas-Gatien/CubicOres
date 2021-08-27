@@ -5,6 +5,7 @@ import com.polarcube1.cubicores.item.ModItemGroup;
 import com.polarcube1.cubicores.item.ModItems;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.OreBlock;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
@@ -28,8 +29,8 @@ public class ModBlocks {
                     .harvestTool(ToolType.PICKAXE)
                     .strength(1f)
                     .sound(SoundType.METAL)));
-    public static final RegistryObject<Block> GUSPER_ORE = registerBlock("gusper_ore",
-            () -> new Block(AbstractBlock.Properties.of(Material.STONE)
+    public static final RegistryObject<OreBlock> GUSPER_ORE = registerBlock("gusper_ore",
+            () -> new OreBlock(AbstractBlock.Properties.of(Material.STONE)
                     .harvestLevel(2)
                     .harvestTool(ToolType.PICKAXE)
                     .strength(50f)
